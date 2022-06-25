@@ -1,5 +1,5 @@
 # developer-management-tool
-![DMT](https://i.imgur.com/z3dQgsS.png)
+![DMT]()
 # Description:
 - developer-management-tool,
 - This developer-management-tool is.......
@@ -23,12 +23,12 @@
  - MongoDB
  - Mongoose
 # other tools: 
- - Trello.(for planing)
- - Figma.(for design )
+ - Trello(for planing)
+ - Figma(for design )
  - Heroku(for deployment)
  - Git & GitHub
  # Note: 
-  - pls for dependencies and libraries check package.json 
+  - For more info please check dependencies and libraries [package.json](https://github.com/jamieahmed/developer-management-tool-/blob/main/package.json)
 # Next Step: 
   - Note avaliable for now 
 
