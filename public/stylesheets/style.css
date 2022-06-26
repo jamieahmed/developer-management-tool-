@@ -1,10 +1,13 @@
 html {
   box-sizing: border-box;
+
 }
 
 /* The Universal Selector */
-*, /* All elements*/
-*::before, /* All ::before pseudo-elements */
+*,
+/* All elements*/
+*::before,
+/* All ::before pseudo-elements */
 *::after {
   /* All ::after pseudo-elements */
   /* height & width will now include border & padding by default but can be overridden as needed */
@@ -17,27 +20,102 @@ html {
 }
 
 body {
-  background-color: gray;
   /* Use a system font, if none are available use an available sans-sarif font */
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
     Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
   margin: 0;
+
 }
 
 nav {
-  background-color: white;
+  background-color: black;
   font-size: 1.6rem;
   display: flex;
-  justify-content: center;
+  flex-direction: row;
+}
+
+nav>:last-child {
+  margin-left: auto;
+}
+
+.logo {
+  text-decoration: none;
+  margin: 0px 50px;
+  color: white;
+  font-size: 30px;
+  font-weight: 600;
+  text-shadow: #fff 0px 0px 5px, #fff 0px 0px 10px, #fff 0px 0px 15px,
+    #ff2d95 0px 0px 20px, #ff2d95 0px 0px 30px, #ff2d95 0px 0px 40px,
+    #ff2d95 0px 0px 50px, #ec1983 0px 0px 75px;
+}
+
+.dark-mode {
+  text-decoration: none;
+  margin: auto 10px;
+  background-color: black;
+  color: white;
+  font-size: 20px;
+  font-weight: 500;
+  text-shadow: #fff 0px 0px 5px, #fff 0px 0px 10px, #fff 0px 0px 15px,
+    #ff2d95 0px 0px 20px, #ff2d95 0px 0px 30px, #ff2d95 0px 0px 40px,
+    #ff2d95 0px 0px 50px, #ec1983 0px 0px 75px;
 }
 
 main {
+  width: 100%;
+  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url('https://tse1.mm.bing.net/th?id=OIP.DYyjVIOheUghQhBMscnqbgHaEK&pid=Api&P=0&w=325&h=183')
 }
 
-h1 {
-  font-size: 3.6rem;
+.main-page {
+  width: 80%;
+  padding: 35px;
+  margin:auto;
+  background-color: black;
+  border-radius: 50px;
+ 
+}
+
+.main-page>h1 {
+  color: white;
+  font-size: 80px;
+  font-weight: 900;
+  width: fit-content;
+  height: fit-content;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 20px;
+  border: 1px solid white;
+}
+
+.main-page>p {
+  color: white;
+}
+
+
+.footer {
+  background-color: black;
+  margin-bottom: 0px;
+  color: white;
+  text-align: center;
+  margin-bottom: 0%;
+}
+
+.footer-con {
+  width: 191px;
+  height: 46px;
+  margin: 0px 50px;
+  font-size: 20px;
+  font-weight: 600;
+  color: white;
+  background-color: black;
+  text-shadow: #fff 0px 0px 5px, #fff 0px 0px 10px, #fff 0px 0px 15px,
+    #ff2d95 0px 0px 20px, #ff2d95 0px 0px 30px, #ff2d95 0px 0px 40px,
+    #ff2d95 0px 0px 50px, #ec1983 0px 0px 75px;
 }

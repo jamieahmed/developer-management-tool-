@@ -1,16 +1,28 @@
 <%- include('./partials/html-head') %>
-<%- include('./partials/nav') %>
+  <link rel="stylesheet" href="/stylesheets/style.css">
+  <%- include('./partials/nav') %>
 
-<main>
-  <h1>hello, <%= user ? user.profile.name : "friend" %></h1>
-  <% if (user?.profile.avatar) { %>
-    <div>
-      <img
-        src="<%= user.profile.avatar %>"
-        alt="<%= user.profile.name %> avatar"
-      />
-    </div>
-  <% } %>
-</main>
+    <main>
+      <div class="main-page">
+        <h1>DMT</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis nobis laborum aliquam, fuga nemo vel quidem
+          illo
+          veritatis laboriosam, earum magnam voluptatem. Quod laboriosam doloremque ipsum hic. Delectus, numquam
+          deserunt.
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet vel vero, ut eligendi deserunt, nostrum ratione
+          facilis, incidunt iusto ex saepe. Commodi consequuntur laborum molestiae accusamus? Cupiditate voluptas porro
+          recusandae.
+        </p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit fugiat similique pariatur minus fuga
+          molestiae enim, aspernatur corporis nam eius magnam rem voluptatem. Consequuntur quibusdam id nisi sunt nulla
+          quae.</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid, veniam alias mollitia vitae porro
+          provident
+          deserunt lorem vel autem blanditiis libero dicta quia molestiae dolor modi assumenda dignissimos architecto
+          maiores
+          ex!</p>
+      </div>
 
-<%- include('./partials/footer') %>
+    </main>
+
+    <%- include('./partials/footer') %>

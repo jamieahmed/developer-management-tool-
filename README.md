@@ -30,6 +30,6 @@
  # Note: 
   - For more info please check dependencies and libraries [package.json](https://github.com/jamieahmed/developer-management-tool-/blob/main/package.json)
 # Next Step: 
-  - Note avaliable for now 
+  - Not avaliable for now 
 
  
