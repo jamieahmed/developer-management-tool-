@@ -1,28 +1,89 @@
 <%- include('./partials/html-head') %>
-  <link rel="stylesheet" href="/stylesheets/style.css">
+  <link rel="stylesheet" href="/stylesheets/index.css" />
   <%- include('./partials/nav') %>
 
     <main>
-      <div class="main-page">
-        <h1>DMT</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis nobis laborum aliquam, fuga nemo vel quidem
-          illo
-          veritatis laboriosam, earum magnam voluptatem. Quod laboriosam doloremque ipsum hic. Delectus, numquam
-          deserunt.
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet vel vero, ut eligendi deserunt, nostrum ratione
-          facilis, incidunt iusto ex saepe. Commodi consequuntur laborum molestiae accusamus? Cupiditate voluptas porro
-          recusandae.
-        </p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit fugiat similique pariatur minus fuga
-          molestiae enim, aspernatur corporis nam eius magnam rem voluptatem. Consequuntur quibusdam id nisi sunt nulla
-          quae.</p>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid, veniam alias mollitia vitae porro
-          provident
-          deserunt lorem vel autem blanditiis libero dicta quia molestiae dolor modi assumenda dignissimos architecto
-          maiores
-          ex!</p>
-      </div>
-
+      <% if (user) { %>
+        <section class="section-one">
+          <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+              <div class="card h-100">
+                <img src="https://tse3.mm.bing.net/th?id=OIP.wtJQBbuOn7yFqpauBGvu2wHaD3&pid=Api&P=0&w=336&h=175"
+                  class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Resources management tool </h5>
+                  <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. A velit perspiciatis
+                    tempore doloribus, ad praesentium quam voluptatem quidem dolorem molestiae voluptatibus eius
+                    quibusdam mollitia illum quo placeat vel explicabo esse? Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit. Modi quia eligendi necessitatibus ipsum veniam fuga! Amet commodi obcaecati, in
+                    veritatis quae, officiis ullam incidunt quam tempore fugiat, nisi odio sapiente!</p>
+                </div>
+                <a class="card-button" href="#" <%- title==='' ? 'class="active"' : '' %>
+                  >
+                  ADD your Resources
+                </a>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img src="https://tse1.mm.bing.net/th?id=OIP._pduE17MsO-sTcW4Xfa5bQHaEK&pid=Api&P=0&w=285&h=160"
+                  class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Password management tool</h5>
+                  <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. A velit perspiciatis
+                    tempore doloribus, ad praesentium quam voluptatem quidem dolorem molestiae voluptatibus eius
+                    quibusdam mollitia illum quo placeat vel explicabo esse? Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit. Modi quia eligendi necessitatibus ipsum veniam fuga! Amet commodi obcaecati, in
+                    veritatis quae, officiis ullam incidunt quam tempore fugiat, nisi odio sapiente!</p>
+                </div>
+                <a class="card-button" href="#" <%- title==='' ? 'class="active"' : '' %>
+                  >
+                  ADD your Passwords
+                </a>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img src="https://www.erp-information.com/wp-content/uploads/2015/02/Contact-manager.jpg"
+                  class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Contact information management tool </h5>
+                  <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. A velit perspiciatis
+                    tempore doloribus, ad praesentium quam voluptatem quidem dolorem molestiae voluptatibus eius
+                    quibusdam mollitia illum quo placeat vel explicabo esse? Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit. Modi quia eligendi necessitatibus ipsum veniam fuga! Amet commodi obcaecati, in
+                    veritatis quae, officiis ullam incidunt quam tempore fugiat, nisi odio sapiente!</p>
+                </div>
+                <a class="card-button" href="#" <%- title==='' ? 'class="active"' : '' %>
+                  >
+                  ADD your contact info
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+        <% } else { %>
+          <section>
+            <div class="main-page">
+              <h1>DMT</h1>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis nobis
+                laborum aliquam, fuga nemo vel quidem illo veritatis laboriosam, earum
+                magnam voluptatem. Quod laboriosam doloremque ipsum hic. Delectus, numquam
+                deserunt. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet
+                vel vero, ut eligendi deserunt, nostrum ratione facilis, incidunt iusto ex
+                saepe. Commodi consequuntur laborum molestiae accusamus? Cupiditate
+                voluptas porro recusandae.
+              </p>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid, veniam
+                alias mollitia vitae porro provident deserunt lorem vel autem blanditiis
+                libero dicta quia molestiae dolor modi assumenda dignissimos architecto
+                maiores ex!
+              </p>
+              <% } %>
+            </div>
+          </section>
     </main>
 
     <%- include('./partials/footer') %>

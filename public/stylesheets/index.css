@@ -1,0 +1,61 @@
+.section-one {
+    padding: 30px;
+    margin: auto;
+    justify-content: center;
+}
+
+.card {
+    border-radius: 10px;
+    background-color: rebeccapurple;
+    color: wheat;
+}
+
+.card:hover {
+    background-color: #ec1983;
+}
+
+.card-img-top {
+    padding: 5px;
+    border-radius: 10px;
+    height: 200px;
+}
+
+.card-title {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+    text-shadow: #fff 0px 0px 5px, #fff 0px 0px 10px, #fff 0px 0px 15px,
+        #ff2d95 0px 0px 20px, #ff2d95 0px 0px 30px, #ff2d95 0px 0px 40px,
+        #ff2d95 0px 0px 50px, #ec1983 0px 0px 75px;
+}
+
+.card-text {
+    font-size: 15px;
+    font-weight: 400;
+    color: black;
+    padding: 20px;
+}
+
+.card-button {
+    font-size: 15px;
+    font-weight: 400;
+    text-decoration: none;
+    width: fit-content;
+    margin: 5px auto;
+    background-color: black;
+    border-radius: 20px;
+    padding: 10px;
+    color: white;
+    text-shadow: #fff 0px 0px 5px, #fff 0px 0px 10px, #fff 0px 0px 15px,
+        #ff2d95 0px 0px 20px, #ff2d95 0px 0px 30px, #ff2d95 0px 0px 40px,
+        #ff2d95 0px 0px 50px, #ec1983 0px 0px 75px;
+
+}
+
+.card-button:hover {
+    color: white;
+    text-decoration: none;
+    background-color: green;
+    font-weight: 600;
+}
