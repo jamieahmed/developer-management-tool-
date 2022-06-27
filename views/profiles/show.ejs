@@ -1,0 +1,96 @@
+<%- include('../partials/html-head') %>
+  <link rel="stylesheet" href="/stylesheets/profiles/show.css" />
+  <%- include('../partials/nav') %>
+
+    <main>
+      <div class="profileInfo">
+        <!-- section one -->
+        <section>
+          <% if (profile.avatar) { %>
+            <div>
+              <img class="profile-avatar" src="<%= profile.avatar %>" alt="<%= profile.name %> avatar" />
+            </div>
+            <% } %>
+              <h1 class="person-name">
+                <%= isSelf ? profile.name : profile.name %>!
+              </h1>
+              <% profile.ProfileDetails.forEach(profile=> { %>
+                <div>
+                  <h3>Age:<%= profile.age %>
+                  </h3>
+                  <h3>Gender: <%= profile.gender%>
+                  </h3>
+                  <h3>Phone Number:<%= profile.pNumber %>
+                  </h3>
+                  <h3>Profession:<%= profile.profession%>
+                  </h3>
+                  <h3>Company: <%= profile.company %>
+                  </h3>
+                  <h3>Address: <%= profile.address%>
+                  </h3>
+                  <h3>Bio: <%= profile.bio%>
+                  </h3>
+                </div>
+                <% }) %>
+        </section>
+        <!-- section two-->
+        <section>
+          <% if (isSelf) {%>
+          <section>
+              <div class="personal-info-cont">
+                  <button>
+                    <a class="" href="">Add your personal info</a>
+                  </button>
+                  <button>
+                    <a class="" href="">Edit</a>
+                  </button>
+                  <button>
+                    <a class="" href="">DELETE</a>
+                  </button>
+              </div>
+         </section>
+         <section>
+              <div>
+                  <button>Resources management Details</button>
+                  <button>Password management Details</button>
+                  <button>Contact information management Details</button>
+              </div>
+          </section>
+
+            <!-- I will change this form  -->
+            <section>
+              <form action="/profiles/<%= profile._id %>/ProfileDetails" method="POST">
+                <label>
+                  Age:
+                  <input type="number" name="age" autocomplete="off" />
+                </label>
+                <br />
+                <label for="gender-select">Gender:</label>
+                <select name="gender">
+                  <option value="Male">Male</option>
+                  <option value="Female">Female</option>
+                  <option value="Other">Other</option>
+                </select><br />
+                <label>
+                  Phone Number:
+                  <input type="number" name="pNumber" autocomplete="off" /> </label><br />
+                <label>
+                  profession:
+                  <input type="text" name="profession" autocomplete="off" /> </label><br />
+                <label>
+                  Company:
+                  <input type="text" name="company" autocomplete="off" /> </label><br />
+                <label>
+                  Address:
+                  <input type="text" name="address" autocomplete="off" /> </label><br />
+                <label>
+                  Bio:
+                  <textarea type="text" name="bio" autocomplete="off" rows="2" cols="30"></textarea>
+                </label><br />
+                <button type="submit">Add profile details</button><br />
+              </form>
+              <% } %>
+            </section>
+      </div>
+    </main>
+    <%- include('../partials/footer') %>

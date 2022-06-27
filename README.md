@@ -11,6 +11,7 @@
 - [GitHub](https://github.com/jamieahmed/developer-management-tool-)
 - [DMT planning](https://trello.com/b/18L9Fg4L/dmt)
 - [deployed DMT]()
+- [ERD](https://app.diagrams.net/#G1RsYVTADwqsyUSGrs2H_NXIecZNsZ1kLL)
 # Technologies: 
 # Front end: 
  - ejs()
@@ -26,6 +27,7 @@
  - Trello(for planing)
  - Figma(for design )
  - Heroku(for deployment)
+ - ERD
  - Git & GitHub
  # Note: 
   - For more info please check dependencies and libraries [package.json](https://github.com/jamieahmed/developer-management-tool-/blob/main/package.json)

@@ -8,6 +8,9 @@
     border-radius: 10px;
     background-color: rebeccapurple;
     color: wheat;
+    width: 80%;
+    height: 300px;
+    margin:auto;
 }
 
 .card:hover {
@@ -17,7 +20,8 @@
 .card-img-top {
     padding: 5px;
     border-radius: 10px;
-    height: 200px;
+    height: 300px;
+    width: 100%;
 }
 
 .card-title {

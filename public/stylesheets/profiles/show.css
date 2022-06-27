@@ -1,0 +1,33 @@
+.profileInfo {
+    background-color: red;
+    text-align: center;
+    width: 50%;
+    margin: 20px  auto;
+}
+
+.personal-info-cont {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    font-size: larger;
+    justify-content: center;
+    padding: 20px;
+}
+.personal-info-cont > button{
+    margin: 10px;
+}
+
+.personal-info-cont > button > a{
+    margin: 10px;
+    text-decoration: none;
+}
+
+.profile-avatar{
+margin: 20px;
+height: 200px;
+width: 200px;
+border-radius: 50%;
+}
+.person-name{
+    color: wheat;
+}
