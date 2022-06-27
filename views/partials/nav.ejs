@@ -7,10 +7,12 @@
       <nav>
         <a class="logo" href="/"><strong>DMT</strong></a>
         <div>
+          <button class="dark-mode" type="submit">🌙</button>
           <% if (user) { %>
-            <a href="/profiles">Profiles</a>
+            <a class="users-page" href="/profiles">Users</a>
+            <a class="profile-owner" href="">Profile</a>
             <a href="/auth/logout">
-              <button type="submit">Logout</button>
+              <button class="logout" type="submit">Logout</button>
             </a>
             <% } else { %>
               <a href="/auth/google" class="siwg-link">
@@ -19,7 +21,5 @@
                 </button>
               </a>
               <% } %>
-                <button class="dark-mode" type="submit">🌙</button>
         </div>
-
       </nav>
