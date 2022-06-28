@@ -2,7 +2,7 @@ import mongoose from 'mongoose'
 
 const Schema = mongoose.Schema
 
-const ProfileDetailsSchema = new Schema({
+const profileDetailsSchema = new Schema({
   age: Number,
   gender: String,
   pNumber: Number,
@@ -18,7 +18,7 @@ const ProfileDetailsSchema = new Schema({
 const profileSchema = new mongoose.Schema({
   name: String,
   avatar: String,
-  ProfileDetails: [ProfileDetailsSchema]
+  profileDetails: [profileDetailsSchema]
 }, {
   timestamps: true
 })

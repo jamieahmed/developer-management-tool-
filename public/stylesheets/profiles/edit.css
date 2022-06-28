@@ -1,0 +1,44 @@
+.add-details {
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+    background-color: rebeccapurple;
+    color: wheat;
+    width: 80%;
+    height: fit-content;
+    margin: auto;
+
+}
+
+.add-details>form {
+    margin: auto;
+    text-align: center;
+    padding: 50px;
+
+}
+
+label {
+    color: white;
+    font-size: x-large;
+    font-weight: bolder;
+    float: left;
+    margin: 5px auto;
+}
+
+input {
+    background-color: white;
+    border-radius: 10px;
+}
+
+
+textarea {
+    background-color: white;
+    border-radius: 10px;
+}
+
+button {
+    background-color: rgb(195, 50, 50);
+    border-radius: 10px;
+    font-size: x-large;
+    font-weight: bolder;
+}

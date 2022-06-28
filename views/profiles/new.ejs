@@ -1,0 +1,43 @@
+<%- include('../partials/html-head') %>
+  <link rel="stylesheet" href="/stylesheets/profiles/new.css" />
+  <%- include('../partials/nav') %>
+
+    <main>
+            <section class="add-details">
+              <form action="/profiles/<%= user.profile._id %>/details" method="POST">
+                <label>
+                  Age:
+                  <input type="number" name="age" autocomplete="off" />
+                </label>
+                <br />
+               <label for="gender-select">Gender:
+                <select name="gender">
+                  <option value="Male">Male</option>
+                  <option value="Female">Female</option>
+                  <option value="Other">Other</option>
+                </select>
+              </label>
+              <br>
+                <label>
+                  Phone Number:
+                  <input type="number" name="pNumber" autocomplete="off" /> </label><br />
+                <label>
+                  profession:
+                  <input type="text" name="profession" autocomplete="off" /> </label><br />
+                <label>
+                  Company:
+                  <input type="text" name="company" autocomplete="off" /> </label><br />
+                <label>
+                  Address:
+                  <input type="text" name="address" autocomplete="off" /> </label><br />
+                <label>
+                  Bio:
+                  <textarea type="text" name="bio" autocomplete="off" rows="2" cols="30"></textarea>
+                </label><br />
+                <button type="submit">Add profile details</button><br />
+              </form>
+          
+            </section>
+      </div>
+    </main>
+    <%- include('../partials/footer') %>

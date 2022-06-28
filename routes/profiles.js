@@ -7,9 +7,19 @@ const router = Router()
 
 router.get('/', isLoggedIn, profilesCtrl.index)
 
+router.get('/newdetails', isLoggedIn, profilesCtrl.new)
+
 router.get('/:id', isLoggedIn, profilesCtrl.show)
 
-router.post('/:id/ProfileDetails', isLoggedIn, profilesCtrl.createprofileDetail)
+router.post('/:id/details', isLoggedIn, profilesCtrl.createprofileDetail)
+
+//DELETE  localhost:3000/flights/:id 
+router.delete("/:id", isLoggedIn, profilesCtrl.delete)
+
+
+router.get("/:id/edit", isLoggedIn, profilesCtrl.edit)
+
+router.put("/:id", isLoggedIn, profilesCtrl.update)
 
 
 

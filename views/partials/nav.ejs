@@ -7,8 +7,8 @@
       <nav>
         <a class="logo" href="/"><strong>DMT</strong></a>
         <div>
-          <button class="dark-mode" type="submit">🌙</button>
           <% if (user) { %>
+            <a class="Home-page" href="/">Home</a>
             <a class="users-page" href="/profiles">Users</a>
             <a class="profile-owner" href="">Profile</a>
             <a href="/auth/logout">
@@ -21,5 +21,6 @@
                 </button>
               </a>
               <% } %>
+              <button class="dark-mode" type="submit">🌙</button>
         </div>
       </nav>

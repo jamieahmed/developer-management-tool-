@@ -32,25 +32,66 @@ function show(req, res) {
 
 function createprofileDetail(req, res) {
     Profile.findById(req.user.profile._id)
-    .then(profile => {
-      profile.ProfileDetails.push(req.body)
-      profile.save()
-      .then(() => {
-        res.redirect(`/profiles/${req.user.profile._id}`)
-      })
+        .then(profile => {
+            profile.profileDetails.push(req.body)
+            profile.save()
+                .then(() => {
+                    res.redirect(`/profiles/${req.user.profile._id}`)
+                })
+        })
+        .catch(err => {
+            console.log(err)
+            res.redirect(`/profiles/${req.user.profile._id}`)
+        })
+}
+function newProfile(req, res) {
+    res.render('profiles/new', {
+        title: 'addInfo'
     })
-    .catch(err => {
-      console.log(err)
-      res.redirect(`/profiles/${req.user.profile._id}`)
+}
+
+function deletedetails(req, res) {
+    Profile.findByIdAndDelete(req.params.id)
+        .then(() => {
+            res.redirect("/profiles");
+        })
+        .catch((err) => {
+            console.log(err);
+            res.redirect("/profiles");
+        });
+}
+
+function edit(req, res) {
+    Profile.findById(req.params.id)
+        .then(profile => {
+            res.render("profiles/edit", {
+                profile,
+                title: "Edit profile"
+            })
+        })
+        .catch(err => {
+            console.log(err)
+            res.redirect("/")
+        })
+}
+
+function update(req, res) {
+  Profile.findByIdAndUpdate(req.params.id, req.body, { new: true })
+    .then((profile) => {
+        res.redirect(`/profiles/${profile._id}`);
     })
+    .catch((err) => {
+        console.log(err);
+        res.redirect("/");
+    });
   }
-
-
-
 
 export {
     index,
     show,
-    createprofileDetail
-
+    createprofileDetail,
+    newProfile as new,
+    deletedetails as delete,
+    edit,
+    update
 };
