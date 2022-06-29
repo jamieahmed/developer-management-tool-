@@ -2,8 +2,7 @@
     display: flex;
     justify-content: center;
     border-radius: 10px;
-    background-color: rebeccapurple;
-    color: wheat;
+    color:black;
     width: 80%;
     height: fit-content;
     margin: auto;
@@ -18,7 +17,7 @@
 }
 
 label {
-    color: white;
+    color:black;
     font-size: x-large;
     font-weight: bolder;
     float: left;
@@ -37,7 +36,6 @@ textarea {
 }
 
 button {
-    background-color: rgb(195, 50, 50);
     border-radius: 10px;
     font-size: x-large;
     font-weight: bolder;

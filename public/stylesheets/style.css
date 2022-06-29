@@ -49,6 +49,7 @@ nav>:last-child {
     #ff2d95 0px 0px 20px, #ff2d95 0px 0px 30px, #ff2d95 0px 0px 40px,
     #ff2d95 0px 0px 50px, #ec1983 0px 0px 75px;
 }
+
 .Home-page,
 .users-page,
 .profile-owner,
@@ -69,7 +70,7 @@ main {
   height: 100vh;
   display: flex;
   flex-direction: column;
-  background-image: url('http://wallpapercave.com/wp/Hp2xfeE.jpg');
+  background-image: url('http://wallpapercave.com/wp/x6KgaJ8.jpg');
 }
 
 .main-page {
@@ -94,7 +95,7 @@ main {
   font-size: 20px;
   font-weight: 500;
   color: black;
-  text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px #49ff18, 0 0 30px #49FF18, 0 0 40px #49FF18, 0 0 55px #183eff, 0 0 75px #e17414;
+
 }
 
 
@@ -115,9 +116,6 @@ main {
   color: white;
   background-color: black;
 
+
 }
 
-.wwww{
-  background-color: red;
-  font: bolder;
-}

@@ -1,8 +1,25 @@
 .profileInfo {
-    background-color: red;
+    border-top: 7px solid greenyellow;
+    border-bottom: 7px solid greenyellow;
+    color: whitesmoke;
+    background-color: black;
     text-align: center;
     width: 50%;
-    margin: 20px  auto;
+    margin: 20px auto;
+    border-radius: 10%;
+    
+}
+
+.profile-avatar {
+    margin: 20px;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+
+}
+
+.person-name {
+    color: wheat;
 }
 
 .personal-info-cont {
@@ -13,21 +30,14 @@
     justify-content: center;
     padding: 20px;
 }
-.personal-info-cont > button{
-    margin: 10px;
-}
 
-.personal-info-cont > button > a{
-    margin: 10px;
-    text-decoration: none;
-}
-
-.profile-avatar{
-margin: 20px;
-height: 200px;
-width: 200px;
-border-radius: 50%;
-}
-.person-name{
-    color: wheat;
+.personal-info-cont>a>button,
+.personal-info-cont>form>button,
+.contact-details>a>button {
+    margin-bottom: 15px;
+    color: antiquewhite;
+    border-radius: 5px;
+    font-weight: bolder;
+    background: linear-gradient(180deg, #77ce18 0%, #1c6ea4 44%, #c517b8 100%);
+    font-size: 20px;
 }

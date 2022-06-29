@@ -10,7 +10,6 @@ const contactSchema = new Schema({
     relatedName: String,
     address: String,
     company: String,
-    url: String,
     note: String,
     owner: { type: Schema.Types.ObjectId, ref: "Profile" }
 }, {

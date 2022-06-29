@@ -1,17 +1,13 @@
 table {
-    width: 95%;
+    width: 85%;
     margin: auto;
-    text-align: center;
-
-
-
 }
 
 thead {
-    background-color: red;
+    color: white;
     font-size: x-large;
     font-weight: bolder;
-
+    background-color: black;
 }
 
 th {
@@ -19,15 +15,15 @@ th {
 }
 
 tbody {
-    background-color: rgb(200, 227, 218);
-
+    background: linear-gradient(45deg, #77ce18 0%, #1c6ea4 44%, #c517b8 100%);
+    
 }
 
 td {
     padding: 10px;
-    text-align: center;
-    color: black;
+    color:whitesmoke;
     font-weight: bold;
+    border: 1px solid black;
 }
 
 .delete {
