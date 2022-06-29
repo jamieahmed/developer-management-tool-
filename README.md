@@ -1,11 +1,10 @@
-# developer-management-tool
+# Developer-management-tool
 ![DMT](https://i.imgur.com/lx1Gdc0.png)
 
 
 # Description:
-- developer-management-tool,
-- This developer-management-tool is.......
-- If you have any suggestion or comments regarding of my DMT please let me know,[Personal portfolio](https://jamieahmed-portfolio.netlify.app/), [linkedin](https://www.linkedin.com/in/jamie-ahmed-b1841421a/) or [Facebook](https://www.facebook.com/JAMIEAHMEDIBRAHIM/)
+ Developer-management-tool is.......
+- If you have any suggestion or comments regarding of DMT please let me know,[Personal portfolio](https://jamieahmed-portfolio.netlify.app/), [linkedin](https://www.linkedin.com/in/jamie-ahmed-b1841421a/) or [Facebook](https://www.facebook.com/JAMIEAHMEDIBRAHIM/)
   
   
 
