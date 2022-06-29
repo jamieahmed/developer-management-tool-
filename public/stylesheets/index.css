@@ -10,11 +10,12 @@
     color: wheat;
     width: 80%;
     height: 300px;
-    margin:auto;
+    margin: auto;
 }
 
 .card:hover {
-    background-color: #ec1983;
+    background-color:rgb(224, 24, 24);
+    color: white;
 }
 
 .card-img-top {
@@ -41,7 +42,12 @@
     padding: 20px;
 }
 
-.card-button {
+ a{
+    text-decoration: none;
+}
+.card-button>button {
+    display: flex;
+    justify-content: center;
     font-size: 15px;
     font-weight: 400;
     text-decoration: none;
@@ -57,9 +63,9 @@
 
 }
 
-.card-button:hover {
+.card-button>button:hover {
     color: white;
     text-decoration: none;
-    background-color: green;
+    background-color: rgb(128, 0, 122);
     font-weight: 600;
 }
