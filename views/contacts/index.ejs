@@ -1,0 +1,13 @@
+<%- include('../partials/html-head') %>
+<link rel="stylesheet" href="/stylesheets/profiles/index.css">
+<%- include('../partials/nav') %>
+
+<main>
+  <div class="cardContainer" style="background-color: white;">
+    <% contacts.forEach(contact => { %>
+    <p><%= contact.fullName %></p>
+    <% }) %>
+  </div>
+</main>
+
+<%- include('../partials/footer') %>

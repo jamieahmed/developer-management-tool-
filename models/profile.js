@@ -18,7 +18,8 @@ const profileDetailsSchema = new Schema({
 const profileSchema = new mongoose.Schema({
   name: String,
   avatar: String,
-  profileDetails: [profileDetailsSchema]
+  profileDetails: [profileDetailsSchema],
+  contacts: [{ type: mongoose.Schema.Types.ObjectId, ref: "Contact" }]
 }, {
   timestamps: true
 })

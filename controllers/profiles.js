@@ -50,6 +50,8 @@ function newProfile(req, res) {
     })
 }
 
+
+
 function deletedetails(req, res) {
     Profile.findByIdAndDelete(req.params.id)
         .then(() => {
@@ -86,6 +88,7 @@ function update(req, res) {
     });
   }
 
+
 export {
     index,
     show,
@@ -94,4 +97,5 @@ export {
     deletedetails as delete,
     edit,
     update
+
 };

@@ -1,0 +1,24 @@
+.add-passwords {
+    background-color: rgb(201, 172, 172);
+    color: black;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    justify-content: center;
+    margin: auto;
+    width: 50%;
+}
+form{
+    margin: 10px auto;
+}
+label{
+    margin: 10px auto;
+    color: black;
+    font-size: x-large;
+    font-weight: bold;
+}
+input,
+textarea{
+    background-color: rgb(179, 57, 57);
+    border: 2px solid white;
+}
