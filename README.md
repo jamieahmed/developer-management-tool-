@@ -1,6 +1,6 @@
 # developer-management-tool
-![DMT](https://imgur.com/mfQAQLH)
-![Imgur](https://imgur.com/lx1Gdc0)
+![DMT](https://i.imgur.com/lx1Gdc0.png)
+
 
 # Description:
 - developer-management-tool,
