@@ -1,0 +1,48 @@
+.add-contacts {
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+    background-color: rebeccapurple;
+    color: wheat;
+    width: 80%; 
+    margin: auto;
+
+}
+
+.add-contacts>form {
+    margin: auto;
+    text-align: center;
+  
+
+}
+
+label {
+    color: white;
+    font-size: x-large;
+    font-weight: bolder;
+    margin: 5px auto;
+    font-size: x-large;
+}
+
+input {
+    background-color: white;
+    border-radius: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    font-size: x-large;
+    color: rgb(222, 211, 211);
+    background-color: aqua;
+}
+
+
+textarea {
+    background-color: white;
+    border-radius: 10px;
+}
+
+button {
+    background-color: rgb(195, 50, 50);
+    border-radius: 10px;
+    font-size: x-large;
+    font-weight: bolder;
+}

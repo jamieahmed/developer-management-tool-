@@ -1,10 +1,9 @@
 <%- include('../partials/html-head') %>
-  <link rel="stylesheet" href="/stylesheets/passwords/new.css" />
+  <link rel="stylesheet" href="/stylesheets/contacts/new.css" />
   <%- include('../partials/nav') %>
 
     <main>
-      <h1 style="color: red">add contacts</h1>
-      <section class="add-passwords">
+      <section class="add-contacts">
         <form action="/contacts" method="POST">
           <label>Full Name: </label>
           <input type="text" name="fullName" required="true" autocomplete="off" />
@@ -28,7 +27,7 @@
           <input type="text" name="company" autocomplete="off" />
           <br>
           <label>URL:</label>
-          <input type="url" name="url" autocomplete="off"  />
+          <input type="url" name="url" autocomplete="off" />
           <br>
           <label for="note">Note</label>
           <textarea type="text" name="note" autocomplete="off" rows="2" cols="30"></textarea>
