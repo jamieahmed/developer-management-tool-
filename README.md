@@ -3,7 +3,7 @@
 
 
 # Description:
- Developer-management-tool is.......
+- Developer-management-tool is.......
 - If you have any suggestion or comments regarding of DMT please let me know,[Personal portfolio](https://jamieahmed-portfolio.netlify.app/), [linkedin](https://www.linkedin.com/in/jamie-ahmed-b1841421a/) or [Facebook](https://www.facebook.com/JAMIEAHMEDIBRAHIM/)
   
   
@@ -11,7 +11,7 @@
 # Getting started:
 - [GitHub](https://github.com/jamieahmed/developer-management-tool-)
 - [DMT planning](https://trello.com/b/18L9Fg4L/dmt)
-- [deployed DMT]()
+- [deployed DMT](https://developer-management-tool.herokuapp.com/)
 - [ERD](https://app.diagrams.net/#G1RsYVTADwqsyUSGrs2H_NXIecZNsZ1kLL)
 # Technologies: 
 # Front end: 
