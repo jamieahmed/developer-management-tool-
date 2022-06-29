@@ -11,7 +11,7 @@
 # Getting started:
 - [GitHub](https://github.com/jamieahmed/developer-management-tool-)
 - [DMT planning](https://trello.com/b/18L9Fg4L/dmt)
-- [deployed DMT](https://developer-management-tool.herokuapp.com/)
+- [DeploymentDMT](https://developer-management-tool.herokuapp.com/)
 - [ERD](https://app.diagrams.net/#G1RsYVTADwqsyUSGrs2H_NXIecZNsZ1kLL)
 # Technologies: 
 # Front end: 
