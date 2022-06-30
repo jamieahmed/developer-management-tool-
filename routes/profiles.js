@@ -13,7 +13,6 @@ router.get('/:id', isLoggedIn, profilesCtrl.show)
 
 router.post('/:id/details', isLoggedIn, profilesCtrl.createprofileDetail)
 
-//DELETE  localhost:3000/flights/:id 
 router.delete("/:id", isLoggedIn, profilesCtrl.delete)
 
 

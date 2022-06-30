@@ -8,15 +8,15 @@ const router = Router()
 // GET localhost:3000/passwords/new
 router.get('/', isLoggedIn, contactsCtrl.index)
 
-router.get('/new', contactsCtrl.new)
+router.get('/new', isLoggedIn, contactsCtrl.new)
 
-router.post('/', contactsCtrl.create)
+router.post('/', isLoggedIn, contactsCtrl.create)
 
 router.delete("/:id", isLoggedIn, contactsCtrl.delete)
 
-router.get("/:id/edit", contactsCtrl.edit)
+router.get("/:id/edit",isLoggedIn, contactsCtrl.edit)
 
-router.put("/:id", contactsCtrl.update)
+router.put("/:id", isLoggedIn, contactsCtrl.update)
 
 
 export {
