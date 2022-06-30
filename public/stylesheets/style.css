@@ -71,6 +71,7 @@ main {
   display: flex;
   flex-direction: column;
   background-image: url('http://wallpapercave.com/wp/x6KgaJ8.jpg');
+  background-size: cover;
 }
 
 .main-page {

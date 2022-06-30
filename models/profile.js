@@ -19,7 +19,8 @@ const profileSchema = new mongoose.Schema({
   name: String,
   avatar: String,
   profileDetails: [profileDetailsSchema],
-  contacts: [{ type: mongoose.Schema.Types.ObjectId, ref: "Contact" }]
+  contacts: [{ type: mongoose.Schema.Types.ObjectId, ref: "Contact" }],
+  comments: [{ type: mongoose.Schema.Types.ObjectId, ref: "Comment" }]
 }, {
   timestamps: true
 })

@@ -75,4 +75,7 @@ function update(req, res) {
     });
 }
 
-export { newContacts as new, index, create, deleteContacts as delete, edit, update };
+
+
+
+export { newContacts as new, index, create, deleteContacts as delete, edit, update, };
