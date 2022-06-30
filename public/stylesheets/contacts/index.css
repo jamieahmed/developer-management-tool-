@@ -16,30 +16,26 @@ th {
 
 tbody {
     background: linear-gradient(45deg, #77ce18 0%, #1c6ea4 44%, #c517b8 100%);
-    
+
 }
 
 td {
     padding: 10px;
-    color:whitesmoke;
+    color: whitesmoke;
     font-weight: bold;
     border: 1px solid black;
 }
 
-.delete {
-    background-color: rgb(210, 46, 46);
-    color: black;
+.edit {
     font-size: 15px;
-    font-weight: bold;
     text-decoration: none;
-
+    font-weight: bold;
+    color: black;
 }
 
-.edit {
-    background-color: green;
-    font-size: 15px;
-    text-decoration: none;
-    font-weight: bold;
-    border: 2px solid black;
+.delete {
     color: black;
+    font-size: 15px;
+    font-weight: bold;
+    text-decoration: none;
 }

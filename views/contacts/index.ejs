@@ -1,42 +1,72 @@
 <%- include('../partials/html-head') %>
-<link rel="stylesheet" href="/stylesheets/contacts/index.css" />
-<%- include('../partials/nav') %>
+  <link rel="stylesheet" href="/stylesheets/contacts/index.css" />
+  <%- include('../partials/nav') %>
 
-<main>
-  <table style="background-color: white;">
-    <thead>
-      <tr>
-        <th>#</th>
-        <th>Full Name</th>
-        <th>Phone Number</th>
-        <th>Email</th>
-        <th>Profession</th>
-        <th>Related Name</th>
-        <th>Address</th>
-        <th>Company</th>
-        <th>Note</th>
-        <th>Delete</th>
-        <th>Edit</th>
-      </tr>
-    </thead>
-    <tbody>
-      <% contacts.forEach(contact=> { %>
-      <tr>
-        <td><%= contacts.indexOf(contact) + 1 %></td>
-        <td><%= contact.fullName %></td>
-        <td><%= contact.phoneNumber %></td>
-        <td><%= contact.email %></td>
-        <td><%= contact.profession %></td>
-        <td><%= contact.relatedName %></td>
-        <td><%= contact.address %></td>
-        <td><%= contact.company %></td>
-        <td><%= contact.note %></td>
-        <td><a class="delete" href="#">Delete</a></td>
-        <td><a class="edit" href="#">Edit</a></td>
-      </tr>
-      <% }) %>
-    </tbody>
-  </table>
-</main>
+    <main>
+      <table style="background-color: white;">
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Full Name</th>
+            <th>Phone Number</th>
+            <th>Email</th>
+            <th>Profession</th>
+            <th>Related Name</th>
+            <th>Address</th>
+            <th>Company</th>
+            <th>Note</th>
+            <th>Edit</th>
+            <th>Delete</th>
+          </tr>
+        </thead>
+        <tbody>
+          <% contacts.forEach(contact=> { %>
+            <tr>
+              <td>
+                <%= contacts.indexOf(contact) + 1 %>
+              </td>
+              <td>
+                <%= contact.fullName %>
+              </td>
+              <td>
+                <%= contact.phoneNumber %>
+              </td>
+              <td>
+                <%= contact.email %>
+              </td>
+              <td>
+                <%= contact.profession %>
+              </td>
+              <td>
+                <%= contact.relatedName %>
+              </td>
+              <td>
+                <%= contact.address %>
+              </td>
+              <td>
+                <%= contact.company %>
+              </td>
+              <td>
+                <%= contact.note %>
+              </td>
+              <td>
+                <a class="edit" href="/contacts/<%= contact._id %>/edit">
+                  <button type="submit">
+                    Edit
+                  </button>
+                </a>
+              </td>
+              <td>
+                <form action="/contacts/<%=contact._id %>?_method=DELETE" method="POST">
+                  <button type="submit">
+                    DELETE
+                  </button>
+                </form>
+              </td>
+            </tr>
+            <% }) %>
+        </tbody>
+      </table>
+    </main>
 
-<%- include('../partials/footer') %>
+    <%- include('../partials/footer') %>

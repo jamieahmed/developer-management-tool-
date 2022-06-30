@@ -39,4 +39,40 @@ function newContacts(req, res) {
   });
 }
 
-export { newContacts as new, index, create };
+function deleteContacts(req, res) {
+  Contact.findByIdAndDelete(req.params.id)
+    .then(() => {
+      res.redirect("/contacts");
+    })
+    .catch((err) => {
+      console.log(err);
+      res.redirect("/contacts");
+    });
+}
+
+function edit(req, res) {
+  Contact.findById(req.params.id)
+    .then((contact) => {
+      res.render("contacts/edit", {
+        contact: contact,
+        title: "Edit Contacts",
+      });
+    })
+    .catch((err) => {
+      console.log(err);
+      res.redirect("/");
+    });
+}
+
+function update(req, res) {
+  Contact.findByIdAndUpdate(req.params.id, req.body, { new: true })
+    .then((contact) => {
+      res.redirect('/contacts');
+    })
+    .catch((err) => {
+      console.log(err);
+      res.redirect("/");
+    });
+}
+
+export { newContacts as new, index, create, deleteContacts as delete, edit, update };
