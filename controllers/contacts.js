@@ -23,7 +23,7 @@ function create(req, res) {
         console.log(profile);
         profile.contacts.push(contact);
         profile.save().then((profile) => {
-          res.redirect(`/profiles/${profile._id}`);
+          res.redirect(`/contacts`);
         });
       });
     })

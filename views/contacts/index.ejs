@@ -3,70 +3,78 @@
   <%- include('../partials/nav') %>
 
     <main>
-      <table style="background-color: white;">
-        <thead>
-          <tr>
-            <th>#</th>
-            <th>Full Name</th>
-            <th>Phone Number</th>
-            <th>Email</th>
-            <th>Profession</th>
-            <th>Related Name</th>
-            <th>Address</th>
-            <th>Company</th>
-            <th>Note</th>
-            <th>Edit</th>
-            <th>Delete</th>
-          </tr>
-        </thead>
-        <tbody>
-          <% contacts.forEach(contact=> { %>
+      <a class="logo-add-contact-page" href="/contacts/new">
+        <button type="submit"">ADD New Contact info</button>
+      </a>
+      <%if(contacts.length) {%>
+        <table>
+          <thead>
             <tr>
-              <td>
-                <%= contacts.indexOf(contact) + 1 %>
-              </td>
-              <td>
-                <%= contact.fullName %>
-              </td>
-              <td>
-                <%= contact.phoneNumber %>
-              </td>
-              <td>
-                <%= contact.email %>
-              </td>
-              <td>
-                <%= contact.profession %>
-              </td>
-              <td>
-                <%= contact.relatedName %>
-              </td>
-              <td>
-                <%= contact.address %>
-              </td>
-              <td>
-                <%= contact.company %>
-              </td>
-              <td>
-                <%= contact.note %>
-              </td>
-              <td>
-                <a class="edit" href="/contacts/<%= contact._id %>/edit">
-                  <button type="submit">
-                    Edit
-                  </button>
-                </a>
-              </td>
-              <td>
-                <form action="/contacts/<%=contact._id %>?_method=DELETE" method="POST">
-                  <button type="submit">
-                    DELETE
-                  </button>
-                </form>
-              </td>
+              <th>#</th>
+              <th>Full Name</th>
+              <th>Phone Number</th>
+              <th>Email</th>
+              <th>Profession</th>
+              <th>Related Name</th>
+              <th>Address</th>
+              <th>Company</th>
+              <th>Note</th>
+              <th>Edit</th>
+              <th>Delete</th>
             </tr>
-            <% }) %>
-        </tbody>
-      </table>
+          </thead>
+          <tbody>
+            <% contacts.forEach(contact=> { %>
+              <tr>
+                <td>
+                  <%= contacts.indexOf(contact) + 1 %>
+                </td>
+                <td>
+                  <%= contact.fullName %>
+                </td>
+                <td>
+                  <%= contact.phoneNumber %>
+                </td>
+                <td>
+                  <%= contact.email %>
+                </td>
+                <td>
+                  <%= contact.profession %>
+                </td>
+                <td>
+                  <%= contact.relatedName %>
+                </td>
+                <td>
+                  <%= contact.address %>
+                </td>
+                <td>
+                  <%= contact.company %>
+                </td>
+                <td>
+                  <%= contact.note %>
+                </td>
+                <td>
+                  <a class="edit" href="/contacts/<%= contact._id %>/edit">
+                    <button type="submit">
+                      Edit
+                    </button>
+                  </a>
+                </td>
+                <td>
+                  <form action="/contacts/<%=contact._id %>?_method=DELETE" method="POST">
+                    <button type="submit">
+                      DELETE
+                    </button>
+                  </form>
+                </td>
+              </tr>
+              <% }) %>
+          </tbody>
+        </table>
+        <% } else { %>
+          <h3 class="if-not-contact">There is not contacts yet,once you create contacts you will see here,if
+            you want to create new contacts please click <a href="/contacts/new"><strong> ➡️Here</strong></a></h3>
+          <% } %>
     </main>
 
     <%- include('../partials/footer') %>
