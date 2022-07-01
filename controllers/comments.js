@@ -40,9 +40,22 @@ function createReview(req, res) {
         })
 }
 
+function show(req, res) {
+    Comment.findById(req.params.id)
+        .then(comment => {
+            res.render('comments/show', {
+                comment
+            }
+            )
+        })
+}
+
+
+
 
 export {
     index,
     create,
-    createReview
+    createReview,
+    show
 }

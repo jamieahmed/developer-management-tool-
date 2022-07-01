@@ -67,7 +67,17 @@
               placeholder="Type Your Comments Here"></textarea><br>
             <button type="submit">Post Comments</button>
           </form>
+          <% if (comments.length) { %>
+            <ul>
+              <% comments.forEach(comment =>{ %>
+                <li><%= comment.comment %></li>
+              <%})%> 
+            </ul>
+          <% } %>
         </section>
+
+
+
         <% } else { %>
           <!-- for entry page  -->
           <section>

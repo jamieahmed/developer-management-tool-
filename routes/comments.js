@@ -6,6 +6,8 @@ const router = Router()
 
 router.post('/', commentsCtrl.create)
 
+router.get('/:id', commentsCtrl.show)
+
 router.post('/:id/reviews', isLoggedIn, commentsCtrl.createReview)
 
 export {
