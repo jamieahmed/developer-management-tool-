@@ -1,8 +1,6 @@
 .section-one {
     padding: 30px;
-    margin: auto;
     justify-content: center;
-   
 }
 
 .card {
@@ -10,15 +8,14 @@
     background: linear-gradient(45deg, #77ce18 0%, #1c6ea4 44%, #c517b8 100%);
     color: wheat;
     width: 80%;
-    height: 300px;
-    margin: auto;
+    margin: 20px auto;
     border-bottom: 13px solid rgb(139, 8, 139);
 }
 
 .card-img-top {
     padding: 5px;
     border-radius: 10px;
-    height: 300px;
+    margin-top: 20px;
     width: 100%;
 }
 
@@ -43,8 +40,7 @@ a {
     text-decoration: none;
 }
 
-.card-button>button,
-.comments>form>button {
+.card-button>button {
     display: flex;
     justify-content: center;
     font-size: 15px;
@@ -62,6 +58,9 @@ a {
 
 }
 
+/* .comments>form {
+    
+} */
 .card-button>button:hover,
 .comments>form>button:hover {
     color: white;
@@ -70,15 +69,32 @@ a {
     font-weight: 600;
 }
 
-.comments {
+
+
+.comments-section {
+    background-color: black;
+    display: flex;
+    justify-content: center;
     font-size: large;
-    text-align: center;
-    margin: 20px;
     font-weight: 600;
     font-style: italic;
-}
 
+}
 
 .comments>form>textarea {
     background-color: white;
+
+}
+
+.comments-title {
+    color: white;
+}
+
+.public-comments {
+    list-style: none;
+    text-align: center;
+}
+
+.public-comments>li {
+    color: white;
 }
