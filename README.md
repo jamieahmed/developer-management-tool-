@@ -33,6 +33,11 @@
  # Note: 
   - For more info please check dependencies and libraries [package.json](https://github.com/jamieahmed/developer-management-tool-/blob/main/package.json)
 # Next Step: 
-  - Not avaliable for now 
+  - I Click RMT, I am able to create all my recourse, links or other useful information's, after I submit my info, I'm able to see them in my profile, also I should able to add, update and delete my info, this info will be private and only mange by me ,
+  - I Click PMT, I am able to keep my passwords and other sensitive info safe, after I submit my info, I'm able to see them in my profile, also I should able to add, update and delete my info, this info will be private and only mange by me ,
+  - Add dark Mode.
+  - Add styling
+  - Check errors and test App
+
 
  
