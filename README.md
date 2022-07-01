@@ -3,7 +3,7 @@
 
 
 # Description:
-- Developer-management-tool is.......
+- Developer-management-tool is help developers to keep their resourses, passwords and contact info in one place.
 - If you have any suggestion or comments regarding of DMT please let me know,[Personal portfolio](https://jamieahmed-portfolio.netlify.app/), [linkedin](https://www.linkedin.com/in/jamie-ahmed-b1841421a/) or [Facebook](https://www.facebook.com/JAMIEAHMEDIBRAHIM/)
   
   
